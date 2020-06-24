@@ -35,14 +35,14 @@
       </section>
 
 
-      <section class="block" >
+      <!-- <section class="block" >
         <div class="actions">
           <button class="button disabled" disabled >Get Sketch plugin</button>
           <button class="button disabled"> Download Xd plugin</button>
           <button class="button disabled" disabled >Get Figma plugin</button>
         </div>
           
-      </section>
+      </section> -->
 
 
       <section class="block" >
@@ -97,8 +97,8 @@
     <section class="block">
       <p class="light">
         <span>Made with</span> 
-        <svg class="love"  width="100%" height="100%" viewBox="0 0 24 24">
-          <g id="heart">
+        <svg class="love" style="margin: 0 4px 0 3px" width="100%" height="100%" viewBox="0 0 24 24">
+          <g id="heart" >
             <rect width="24" height="24" fill="#faf9f9" opacity="0"/>
             <path d="M12,21a1,1,0,0,1-.71-.29L3.52,12.93a5.233,5.233,0,1,1,7.4-7.4L12,6.61l1.08-1.08a5.233,5.233,0,1,1,7.4,7.4l-7.77,7.78A1,1,0,0,1,12,21Z" fill="#faf9f9"/>
           </g>
@@ -107,11 +107,11 @@
       </p>
       <hr class="sep">
       <ul class="contacts">
-        <li>
+        <!-- <li>
           <a target="_blank" href="https://simon-renault.com">
             <img src="icons/social/website.svg" alt="website icon">
           </a>
-        </li>
+        </li> -->
         <li>
           <a target="_blank" href="https://https://github.com/Simon-Renault">
             <img src="icons/social/github.svg" alt="github icon">
@@ -123,12 +123,7 @@
           </a>
         </li>
         <li>
-          <a target="_blank" href="http://simon-renault.com">
-            <img src="icons/social/medium.svg" alt="medium icon">
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://www.instagram.com/simon.renault">
+          <a target="_blank" href="https://www.instagram.com/simon.r_drawing/">
             <img src="icons/social/instagram.svg" alt="instagram icon">
           </a>
         </li>
