@@ -1,0 +1,207 @@
+/*
+* window
+*
+*/
+.window{
+    width : 1100px;
+    max-width: 90vw;
+    background: $white;
+    box-shadow: 0px 20px 50px rgba($grey-80,0.10);
+    border-radius: 10px;
+    margin-bottom: 180px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgba(#707070,0.15);
+    &::before{
+        content:'';
+        display: block;
+        top: 15px;
+        left: 20px;
+        background: $grey-20;
+        border-radius: 50%;
+        position: absolute;
+        height: 13px;
+        width:13px;
+        box-shadow: 22px 0px 0px $grey-20 , 44px 0px 0px $grey-20;
+        @media screen  and (min-width : 1000px){
+            height: 16px;
+            width:16px;
+            box-shadow: 25px 0px 0px $grey-20 , 50px 0px 0px $grey-20;
+        }
+    }
+    & .top{
+        padding: 40px 0 20px 0;
+        flex-grow: 4;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media screen  and (min-width : 1000px){
+            padding: 40px 0;
+        }
+        .preview{
+            width: 200px;
+            height:200px;
+            margin: 10px 0 20px 0;
+            @media screen  and (min-width : 1000px){
+                margin: 40px 0 30px 0;
+                width: 270px;
+                height:270px;
+            }
+        }
+        .grid{
+            display: flex;
+            flex-direction: row;
+        }
+        .icon{
+            position: relative;
+            margin: 10px;
+            display: block;
+            height:40px;
+            width:40px;
+            @media screen  and (min-width : 1000px){
+                height:60px;
+                width:60px;
+            }
+
+            &__inner{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                height:20px;
+                width: 20px;
+                @media screen  and (min-width : 1000px){
+                    height:30px;
+                    width:30px;
+                }
+               
+            }
+        }
+    }
+    & .bottom{
+        display: grid;
+        grid-gap: 20px;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        padding: 20px 5% 55px;
+        background-color: $grey-5;
+        flex-grow: 1;
+        width:100%;
+        border-top: 2px solid rgba(#707070,0.1);
+        border-radius: 0px 0px 10px 10px;
+        grid-template-columns:  1fr ;
+        @media screen  and (min-width : 1000px){
+            padding: 50px 10% 75px;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 1fr;
+        }
+        & > .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            & .side{
+                min-width: initial;
+                max-width: 100%;
+                width: initial;
+            }
+            .left{
+                
+                margin: 0 0 20px 0;
+                @media screen  and (max-width : 366px){
+                    flex-grow: 1;
+                }
+            }
+            .right{
+                margin: 0 0 0 20px;
+                width: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media screen  and (max-width : 345px){
+                    margin: 0 20px 0 20px;
+                }
+                
+                svg{
+                    margin:0;
+                }
+            }
+        }
+        .right{
+            font-weight: 600;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0 20px 0px;
+            svg{
+                margin: 0 14px 0 0;
+                height:24px;
+                width:24px;
+                fill : $grey-80;
+            }
+        }
+        .center{
+            width: 100%;
+            min-width: 200px;
+        }
+        .left{
+            padding : 0 15px 0 25px;
+            .color{
+                margin: 0 5px 0 0;
+                width: 30px;
+                height:30px;
+                border-radius: 50%;
+            }
+            input[type="text"]{
+                padding: 0 0 0 10px;
+                border:none;
+                width:initial;
+                width: 105px;
+                background-color: transparent;
+                font-size: 18px;
+            }
+        }
+        & .desktop{
+            display: none ;
+            @media screen  and (min-width : 1000px){
+              display: flex;
+            }
+        }
+        & .mobile{
+            display: flex;
+            @media screen  and (min-width : 1000px){
+              display: none ;
+            }
+        }
+    }
+    & .over_bottom{
+        position: absolute;
+        width:100%;
+        bottom:0;
+        left:0;
+        right:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0,50%);
+        
+        & .small{
+            height:45px;
+            width: 110px;
+            font-size: 16px;
+            margin:0;
+            animation: none;
+            padding: 0;
+            @media screen  and (min-width : 1000px){
+                height:45px;
+                font-size: 18px;
+                width: 150px;
+            }
+        }
+    }
+}

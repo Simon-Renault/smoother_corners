@@ -1,0 +1,62 @@
+
+/*
+* Footer styles
+*
+*/
+
+
+.footer{
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue;
+    height: 300px;
+    .sep{
+        background-color: rgba($white,50%);
+        width: 60px;
+        height: 2px;
+        margin: 0 0 16px 0;
+        border-style: none;
+        border-radius: 2px;
+    }
+}
+.love{
+    user-select: none;
+    position: relative;
+    height:20px;
+    width: 20px;
+    transform: translate(0px,3px);
+}
+
+.contacts{
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    li{
+        border-radius: 45%;
+        margin: 10px 5px;
+        a{
+            transition: transform .2s ease-in-out;
+            display: block;
+            position: relative;
+            outline: none;
+            &:hover,&:focus{
+                transform: scale(1.1,1.1);
+            }
+        }
+    }
+}
+
+
+.smooth-small{
+    fill: $white;
+    fill-opacity : 0.3;
+}
+
+
