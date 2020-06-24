@@ -28,64 +28,64 @@
    
    
 
-     <main class="main" >
-    <section class="block">
-      <h1>Smoother corners</h1>
-      <p class="serif">Inspired by the design of apple icons, make your corners looks as smooth as butter ! A litle tool and plugin made by Simon Renault.</p>
-    </section>
+    <main class="main" >
+      <section class="block">
+        <h1>Smoother corners</h1>
+        <p class="serif">Inspired by the design of apple icons, make your corners looks as smooth as butter ! A litle tool and plugin made by Simon Renault.</p>
+      </section>
 
 
-    <section class="block" >
-      <div class="actions">
-        <button class="button disabled" disabled >Get Sketch plugin</button>
-        <button class="button pulsing"> Download Xd plugin</button>
-        <button class="button disabled" disabled >Get Figma plugin</button>
-      </div>
+      <section class="block" >
+        <div class="actions">
+          <button class="button disabled" disabled >Get Sketch plugin</button>
+          <button class="button disabled"> Download Xd plugin</button>
+          <button class="button disabled" disabled >Get Figma plugin</button>
+        </div>
+          
+      </section>
+
+
+      <section class="block" >
+        <slot/>
+      </section>
+
+      <section class="block light why">
+          <h2>Why?</h2>
+          <p class="serif">Where did I got the idea to build this tool ? And how I made it happen for real, here are some insight about my work.</p>
+          <p>
+            No doubt that today bold border radius are a big Ui trend. While this is nothing bad I still think that large border radius sometimes seems odd to eyes. This is due to the transition betwwen the rounded part and the linear one. Apple and some other brands have since a long time udurstood that pricinciple and found ways to smoothen the transition betwwen the rounded and straigt part of icons or even devices edges.
+            <br>
+            <br>
+            The result? More pleasing icons!
+            <br>
+            <br>
+            <br>
+          </p>
         
-    </section>
+      </section>
 
-
-    <section class="block" >
-       <slot/>
-    </section>
-
-    <section class="block light why">
-        <h2>Why?</h2>
-        <p class="serif">Where did I got the idea to build this tool ? And how I made it happen for real, here are some insight about my work.</p>
-        <p>
-          No doubt that today bold border radius are a big Ui trend. While this is nothing bad I still think that large border radius sometimes seems odd to eyes. This is due to the transition betwwen the rounded part and the linear one. Apple and some other brands have since a long time udurstood that pricinciple and found ways to smoothen the transition betwwen the rounded and straigt part of icons or even devices edges.
-          <br>
-          <br>
-          The result? More pleasing icons!
-          <br>
-          <br>
-          <br>
+      <section class="block contact">
+        <h2>Feature request</h2>
+        <p class="serif">
+          Found a bug ? Have an awesome idea and you want to talk about it ? Or maybe you simply want to have an improvement idea for this tool. In all the cases here is a way to get in touch.
         </p>
-       
-    </section>
 
-    <section class="block contact">
-      <h2>Feature request</h2>
-      <p class="serif">
-        Found a bug ? Have an awesome idea and you want to talk about it ? Or maybe you simply want to have an improvement idea for this tool. In all the cases here is a way to get in touch.
-      </p>
-
-      <form action="" class="form form-feedback">
-          <input type="text" name="s_email" id="" placeholder="Your email if you want" class="email">
-          <textarea name="s_message" id="" class="copy" placeholder="Tell me about the feature or change you would like me to implement :)"></textarea>
-          <button class="button pulsing submit">
-            <div> Submit </div> 
-            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <g id="paper-plane">
-                <rect id="Rectangle_124" data-name="Rectangle 124" width="24" height="24" fill="#fff" opacity="0"/>
-                <path id="Path_149" data-name="Path 149" d="M21,4a1.31,1.31,0,0,0-.06-.27V3.64a.884.884,0,0,0-.49-.49h-.09A.86.86,0,0,0,20.05,3H20a1,1,0,0,0-.3,0L1.7,9a1,1,0,0,0,0,1.9l8.53,2.84,2.84,8.53a1,1,0,0,0,1.9,0l6-18A1,1,0,0,0,21,4ZM16.3,6.29l-5.57,5.57L5.16,10ZM14,18.84l-1.86-5.57L17.71,7.7Z" fill="#fff"/>
-              </g>
-            </svg>
-          </button>
-      </form>
-     
-    </section>
-   
+        <form action="" class="form form-feedback">
+            <input type="text" name="s_email" id="" placeholder="Your email if you want" class="email">
+            <textarea name="s_message" id="" class="copy" placeholder="Tell me about the feature or change you would like me to implement :)"></textarea>
+            <button class="button pulsing submit">
+              <div> Submit </div> 
+              <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g id="paper-plane">
+                  <rect id="Rectangle_124" data-name="Rectangle 124" width="24" height="24" fill="#fff" opacity="0"/>
+                  <path id="Path_149" data-name="Path 149" d="M21,4a1.31,1.31,0,0,0-.06-.27V3.64a.884.884,0,0,0-.49-.49h-.09A.86.86,0,0,0,20.05,3H20a1,1,0,0,0-.3,0L1.7,9a1,1,0,0,0,0,1.9l8.53,2.84,2.84,8.53a1,1,0,0,0,1.9,0l6-18A1,1,0,0,0,21,4ZM16.3,6.29l-5.57,5.57L5.16,10ZM14,18.84l-1.86-5.57L17.71,7.7Z" fill="#fff"/>
+                </g>
+              </svg>
+            </button>
+        </form>
+      
+      </section>
+    
 
 
 
