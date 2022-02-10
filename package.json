@@ -13,7 +13,7 @@
     "color": "^3.1.2",
     "gridsome": "^0.7.13",
     "gsap": "^3.3.4",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.2"
   }
 }
